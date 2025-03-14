@@ -5,9 +5,11 @@
         //Creating a Shape Area Calculator Program
         static void Main(string[] args)
         {
-           ICalculateArea rectangle = new Rectangle("Rectangle", 10, 20);
+            //Creating a Rectangle Object
+            ICalculateArea rectangle = new Rectangle("Rectangle", 10, 20);
             rectangle.Display();
 
+            //Creating a Circle Object
             ICalculateArea circle = new Circle("Circle", 10);
             circle.Display();
         }
