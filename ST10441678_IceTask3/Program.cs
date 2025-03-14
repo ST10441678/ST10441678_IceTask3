@@ -2,9 +2,14 @@
 {
     internal class Program
     {
+        //Creating a Shape Area Calculator Program
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+           ICalculateArea rectangle = new Rectangle("Rectangle", 10, 20);
+            rectangle.Display();
+
+            ICalculateArea circle = new Circle("Circle", 10);
+            circle.Display();
         }
     }
 }
